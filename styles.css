@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    background-color: #00171F;
+    color: white;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.bg-blur {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assests/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    position: relative;
+    top: 0;
+}
+
+.overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;/* Adjust the height to match header height */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+.name h1{
+    font-size: 1.3rem;
+}
+.name p{
+    font-size: o.8rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn a{
+    display: flex;
+}
+@media screen and (max-width: 592px){
+    .btn{
+        display: none;
+    }
+    .overlay{
+        justify-content: center;
+    }
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    background-color: #00171F;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.88rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.btn i{
+    font-size: 1.1rem;
+    margin-right:3px ;
+}
+
+.logo .img {
+    width: 70px;
+    height: 70px;
+    background-color: #F6D4BA;
+    border-radius: 50%;
+    margin-right: 25px;
+    /* border: 4px white solid; */
+    background-image: url(assests/asis\ img.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* end of header */
+
+.projects{
+    width: 100%;
+}
+.projects h2{
+    margin: 10px;
+}
+.projects-flex{
+    display: flex;
+    margin: 30px 10px;
+    gap: 10px;
+    justify-content: center;
+}
+@media screen and (max-width: 800px){
+    .projects h2{
+        text-align: center;
+    }
+    .projects-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project{
+        width: 350px;
+        height: 300px;
+    }
+}
+.project{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: px #00171F solid;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.project:hover{
+    box-shadow: 2px 2px 10px 2px #7A9CC6 ;
+    transform: scale(0.97);
+}
+.project .text{
+    padding: 20px 20px;
+}
+.text h3{
+    font-size: 1.1rem;
+}
+.text p{
+    font-size: 0.8rem;
+}
+.project .img{
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.discord{
+    background-image: url(/assests/discord.jpg);
+}
+.spotify{
+    background-image: url(/assests/spotify.jpg);
+}
+.amazon{
+    background-image: url(/assests/amazon.jpg);
+}
+.chatgpt{
+    background-image: url(/assests/chatgpt.jpg);
+}
+
+/* end of projects */
+
+.skills{
+    width: 100%;
+    padding: 20px;
+}
+.skills h2{
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+.skills-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.skill{
+    width: 200px;
+    height: 200px;
+    background-color: #040F16;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.2s;
+}
+@media screen and (max-width: 800px){
+    .skills-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill{
+        width: 300px;
+    }
+}
+.skill:hover{
+    transform: scale(0.98);
+}
+
+.skill h3{
+    opacity: 0.8;
+    color: white;
+}
+.skill:hover h3{
+    opacity: 0.8;
+}
+.skill:hover .btns{
+    opacity: 0.9;
+}
+.skill .btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+.gradiant-border{
+    padding: 1px 2px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #8FC93A, #0072BB);
+}
+.btns button{
+    background-color: #272D2D;
+    color: white;
+    border: none;
+    outline: none;
+    padding:5px 5px ;
+    border-radius: 2px;
+    
+}
+/* end of skill */
+
+.more-projects{
+    padding: 20px;
+    width: 300px;
+    color: white;
+    background-color:#040F16 ;
+    border-radius: 5px;
+}
+#more-h3{
+    margin-bottom: 20px;
+}
+.more-projects a{
+    color: white;
+    text-decoration: none;
+}
+.more-project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.more-project h3{
+    opacity: 0.7;
+    font-size: 1rem;
+}
+.more-project p{
+    opacity: 0.4;
+    font-size: 0.7rem;
+}
+.icon{
+    opacity: 0.6;
+    font-size: 0.99rem;
+}
+/* end of more projects and skills-flex */
+
+.cards{
+    width: 100%;
+    padding: 20px;
+}
+.cards h2{
+    margin: 10px;
+}
+.flex-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    width: 250px;
+}
+.card .img{
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    color: black;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.absolute-card{
+    height: 100%;
+    background-color: #0CF574;
+    opacity: 0.9;
+    /* color: white; */
+    padding: 20px;
+    position: absolute;
+    top: 97%;
+    color: black;
+    transition: 0.5s;
+}
+.card .img:hover .absolute-card{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.absolute-card h3{
+    font-size: 1.2rem;
+}
+.absolute-card p{
+    font-size: 0.8rem;
+}
+.absolute-card button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #00171F;
+    color: white;
+    /* border: red 1px solid; */
+    border-radius: 5px;
+}
+.card .text h3{
+    font-size: 1rem;
+}
+.card span{
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+.card span:nth-child(3){
+    float: right;
+    margin-right:10px ;
+}
